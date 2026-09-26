@@ -29,4 +29,5 @@ export const meetingTypeLabels: Record<MeetingType, string> = {
   regular: "Sacrament Meeting",
   stake: "Stake Visit",
   general: "General Conference",
+  special: "Special Meeting",
 };

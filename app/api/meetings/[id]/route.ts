@@ -9,7 +9,7 @@ export async function GET(_request: NextRequest, ctx: RouteContext<"/api/meeting
     return Response.json({ error: "Meeting id must be a positive whole number." }, { status: 400 });
   }
 
-  const meeting = getMeetingById(Number(id));
+  const meeting = await getMeetingById(Number(id));
   if (!meeting) {
     return Response.json({ error: `No meeting found with id ${id}.` }, { status: 404 });
   }

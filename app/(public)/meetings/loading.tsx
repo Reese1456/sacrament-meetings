@@ -1,4 +1,4 @@
-// In-memory reads resolve almost instantly, so this fallback is rarely visible locally.
+// Shown while the meeting routes in this group wait on the database.
 export default function Loading() {
   return (
     <div role="status" aria-live="polite" className="space-y-4">
